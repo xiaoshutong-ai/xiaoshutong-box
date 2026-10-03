@@ -1,1 +1,1 @@
-{"package": "com.jay.baibaoxiang", "name": "小书童·百宝箱", "versionCode": 7, "versionName": "1.6", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/baibaoxiang-1.6.apk", "changelog": "修复：页面代码正确打包；已是最新不可点；跳转浏览器下载"}
+{"package": "com.jay.baibaoxiang", "name": "小书童·百宝箱", "versionCode": 8, "versionName": "1.7", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/baibaoxiang-1.7.apk", "changelog": "加queries声明检测已装应用；按钮不再挡名字"}
