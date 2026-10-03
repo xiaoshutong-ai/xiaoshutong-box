@@ -1,1 +1,1 @@
-{"package": "com.jay.studyroom", "name": "水墨书院", "versionCode": 29, "versionName": "1.28", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/studyroom-1.28.apk", "changelog": "修更新时间不显示；设备停用真正 блокировать；录取码清除后回待验证"}
+{"package": "com.jay.studyroom", "name": "水墨书院", "versionCode": 30, "versionName": "1.29", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/studyroom-1.29.apk", "changelog": "更新时间防溢出布局"}
