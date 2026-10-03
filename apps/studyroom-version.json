@@ -1,1 +1,1 @@
-{"package": "com.jay.studyroom", "name": "水墨书院", "versionCode": 12, "versionName": "1.11", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/studyroom-1.11.apk", "changelog": "更新地址切换到独立版本文件"}
+{"package": "com.jay.studyroom", "name": "水墨书院", "versionCode": 13, "versionName": "1.12", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/studyroom-1.12.apk", "changelog": "传书端到端加密，暗号强度规则+服务端限流"}
