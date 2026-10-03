@@ -1,0 +1,8 @@
+{
+  "package": "com.jay.baibaoxiang",
+  "name": "小书童·百宝箱",
+  "versionCode": 4,
+  "versionName": "1.3",
+  "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/baibaoxiang-1.3.apk",
+  "changelog": "已是最新显示；下载进度不遮挡；安装权限引导；闲置自动下载"
+}
