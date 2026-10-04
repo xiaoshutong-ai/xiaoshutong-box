@@ -1,1 +1,1 @@
-{"package":"com.jay.studyroom","name":"水墨书院","versionCode":38,"versionName":"1.37","apkUrl":"https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/studyroom-1.37.apk","changelog":"修复 Android 11+/Android 16 语音识别：补齐 SpeechRecognizer 服务可见性，优先本地识别并细分错误提示"}
+{"package": "com.jay.studyroom", "name": "水墨书院", "versionCode": 37, "versionName": "1.36", "apkUrl": "https://cdn.jsdelivr.net/gh/xiaoshutong-ai/xiaoshutong-box@main/apps/studyroom-1.36.apk", "changelog": "下载链接切换到国内可访问的 CDN", "minVersionCode": 37}
