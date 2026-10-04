@@ -1,1 +1,1 @@
-{"package": "com.jay.studyroom", "name": "水墨书院", "versionCode": 36, "versionName": "1.35", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/studyroom-1.35.apk", "changelog": "新用户注册失败时也弹录取码页"}
+{"package":"com.jay.studyroom","name":"水墨书院","versionCode":37,"versionName":"1.36","apkUrl":"https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/studyroom-1.36.apk","changelog":"修复更新渠道回归：恢复六席人物对话与语音输入，并保留新用户注册/心跳失败时的录取码兜底"}
