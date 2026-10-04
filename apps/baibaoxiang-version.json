@@ -1,1 +1,1 @@
-{"package": "com.jay.baibaoxiang", "name": "百宝箱", "versionCode": 9, "versionName": "1.8", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/baibaoxiang-1.8.apk", "changelog": "应用名去小书童前缀"}
+{"package": "com.jay.baibaoxiang", "name": "百宝箱", "versionCode": 10, "versionName": "1.9", "apkUrl": "https://raw.githubusercontent.com/xiaoshutong-ai/xiaoshutong-box/main/apps/baibaoxiang-1.9.apk", "changelog": "密匣同版本在线链接修复；版本检查超时20秒"}
