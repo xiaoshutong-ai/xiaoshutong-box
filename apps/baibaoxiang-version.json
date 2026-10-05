@@ -1,1 +1,1 @@
-{"package":"com.jay.baibaoxiang","name":"百宝箱","versionCode":13,"versionName":"1.12","apkUrl":"https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/baibaoxiang-v1.12/baibaoxiang-1.12.apk","changelog":"下载链接切换到国内可访问的 CDN","minVersionCode":13}
+{"package":"com.jay.baibaoxiang","name":"百宝箱","versionCode":13,"versionName":"1.12","apkUrl":"https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/baibaoxiang-v1.12/baibaoxiang-1.12.apk","changelog":"正式安装包改由 GitHub Releases 分发，更新链路更稳定","minVersionCode":13}
