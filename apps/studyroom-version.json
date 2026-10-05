@@ -1,1 +1,15 @@
-{"package":"com.jay.studyroom","name":"水墨书院","versionCode":41,"versionName":"1.40","apkUrl":"https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/studyroom-v1.40/studyroom-1.40.apk","sha256":"aa1a46da71e9e306355f2e429e63686c9c89eec11bd26a39b403af37d3a9715c","sizeBytes":16379747,"publishedAt":"2026-10-05T07:22:23Z","releaseTag":"studyroom-v1.40","sourceCommit":"2f4d7b08b2fa737d0bda6ad97294f0eb64be8059","changelog":"更新链安全加固：APK 下载完成后强制校验大小与 SHA-256 才允许安装；1.40+ 优先使用 CloudBase 国内下载节点，网络或完整性异常时自动回退 GitHub Release","minVersionCode":37,"preferredApkUrl":"https://commercial-cloudbase-d0a54cf5801-1438454334.tcloudbaseapp.com/releases/studyroom/1.40/studyroom-1.40.apk"}
+{
+  "package": "com.jay.studyroom",
+  "name": "水墨书院",
+  "versionCode": 42,
+  "versionName": "1.41",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/studyroom-v1.41/studyroom-1.41.apk",
+  "sha256": "259a60e5b915d645990868e6408256f856b0fef4bcbdf829fb04ff264f6e4bc0",
+  "sizeBytes": 16383843,
+  "publishedAt": "2026-10-05T13:35:32Z",
+  "releaseTag": "studyroom-v1.41",
+  "sourceCommit": "7f2d3d40d10842607934c4d02baf950f8321d76e",
+  "changelog": "六席状态看板重做：状态与上报新鲜度分离，2×3 紧凑水墨面板；修复普通回复误判“受阻/blocked”、旧状态源不一致和相对时间显示；任务文案去工程噪声，刷新改为一次上报 + 有界只读对账。",
+  "minVersionCode": 37,
+  "preferredApkUrl": "https://commercial-cloudbase-d0a54cf5801-1438454334.tcloudbaseapp.com/releases/studyroom/1.41/studyroom-1.41.apk"
+}
