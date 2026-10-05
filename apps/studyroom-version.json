@@ -1,1 +1,1 @@
-{"package":"com.jay.studyroom","name":"水墨书院","versionCode":38,"versionName":"1.37","apkUrl":"https://cdn.jsdelivr.net/gh/xiaoshutong-ai/xiaoshutong-box@main/apps/studyroom-1.37.apk","changelog":"修复六席对话语音输入：补齐 Android 11+ 语音识别服务可见性，优先使用设备端识别，并改进错误提示","minVersionCode":37}
+{"package":"com.jay.studyroom","name":"水墨书院","versionCode":39,"versionName":"1.38","apkUrl":"https://cdn.jsdelivr.net/gh/xiaoshutong-ai/xiaoshutong-box@main/apps/studyroom-1.38.apk","changelog":"重做六席人物交互：单击听心情、长按进入对话、双击查看画像；人物转台改为清晰多视角，并移除传书入口","minVersionCode":37}
