@@ -1,0 +1,14 @@
+{
+  "package": "com.xst.posturevision.experiment",
+  "name": "夫子陪伴",
+  "versionCode": 5,
+  "versionName": "0.2.3",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/fuzipartner-v0.2.3/fuzipartner-0.2.3.apk",
+  "sha256": "115ff09a770783af9eb6ceaabd5603caa946cf9bc160446a88886024bf79f105",
+  "sizeBytes": 92304463,
+  "publishedAt": "2026-10-06T05:26:32Z",
+  "releaseTag": "fuzipartner-v0.2.3",
+  "sourceCommit": "832f85f6cc10b5decca20b11c87aa84767253559",
+  "changelog": "v0.2.3 正式稳定版；产品行为保持已验收基线，已完成 CI、模拟器、签名与 vivo Android 16 原位升级验证。",
+  "minVersionCode": 3
+}
