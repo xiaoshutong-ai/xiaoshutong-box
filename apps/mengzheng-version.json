@@ -1,0 +1,14 @@
+{
+  "package": "com.jay.personalchecklist.accountbeta",
+  "name": "蒙正规划",
+  "versionCode": 25,
+  "versionName": "2.2.7-p2",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/mengzheng-v2.2.7-p2/mengzheng-2.2.7-p2.apk",
+  "sha256": "94beb8c103ad10967b483b5b9a0c789568a959ef40f26eefe604193f7ffbd558",
+  "sizeBytes": 56714637,
+  "publishedAt": "2026-10-06T06:45:51Z",
+  "releaseTag": "mengzheng-v2.2.7-p2",
+  "sourceCommit": "8e9ea9c3b67db18a9ad34461c5309afe2038524d",
+  "changelog": "2.2.7-p2 稳定版：完成账号同步、AI 规划、语音输入与计划阻塞处理链路优化，修复登录传输与密码恢复问题；当前工程基线已合入 main。",
+  "minVersionCode": 0
+}
