@@ -1,0 +1,17 @@
+{
+  "package": "com.jay.passwordmanager",
+  "name": "密匣",
+  "desc": "离线密码本，记住所有密码",
+  "versionCode": 25,
+  "versionName": "2.14",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/pwmanager-v2.14/pwmanager-2.14.apk",
+  "sha256": "561dd20501c54bdb807f50ae66667a7d1b64fe38bbf377f26dedd81812b958fc",
+  "sizeBytes": 1111032,
+  "publishedAt": "2026-10-05T05:24:28Z",
+  "releaseTag": "pwmanager-v2.14",
+  "changelog": "返回键修复、查看页加复制按钮、恢复行内删除",
+  "minVersionCode": 0,
+  "iconFile": "icons/pwmanager.png",
+  "catalogOrder": 10,
+  "catalogUpdatedAt": "2026-10-06T14:46:33+08:00"
+}

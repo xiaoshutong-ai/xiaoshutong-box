@@ -1,1 +1,17 @@
-{"package":"com.jay.baibaoxiang","name":"百宝箱","versionCode":13,"versionName":"1.12","apkUrl":"https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/baibaoxiang-v1.12/baibaoxiang-1.12.apk","changelog":"正式安装包改由 GitHub Releases 分发，更新链路更稳定","minVersionCode":13}
+{
+  "package": "com.jay.baibaoxiang",
+  "name": "百宝箱",
+  "desc": "小书童全家桶，一处安装所有应用",
+  "versionCode": 13,
+  "versionName": "1.12",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/baibaoxiang-v1.12/baibaoxiang-1.12.apk",
+  "sha256": "d56d07a2033d9173b74a4afebc9d55f1f080b31448134487766c6de2a14b1246",
+  "sizeBytes": 2102407,
+  "publishedAt": "2026-10-05T05:24:24Z",
+  "releaseTag": "baibaoxiang-v1.12",
+  "changelog": "正式安装包改由 GitHub Releases 分发，更新链路更稳定",
+  "minVersionCode": 13,
+  "iconFile": "icons/baibaoxiang.png",
+  "catalogOrder": 20,
+  "catalogUpdatedAt": "2026-10-06T14:46:33+08:00"
+}
