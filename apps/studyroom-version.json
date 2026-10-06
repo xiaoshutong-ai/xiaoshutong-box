@@ -1,6 +1,7 @@
 {
   "package": "com.jay.studyroom",
   "name": "水墨书院",
+  "desc": "笔墨纸砚卷匣，六人同院",
   "versionCode": 42,
   "versionName": "1.41",
   "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/studyroom-v1.41/studyroom-1.41.apk",
@@ -11,5 +12,8 @@
   "sourceCommit": "7f2d3d40d10842607934c4d02baf950f8321d76e",
   "changelog": "六席状态看板重做：状态与上报新鲜度分离，2×3 紧凑水墨面板；修复普通回复误判“受阻/blocked”、旧状态源不一致和相对时间显示；任务文案去工程噪声，刷新改为一次上报 + 有界只读对账。",
   "minVersionCode": 37,
-  "preferredApkUrl": "https://commercial-cloudbase-d0a54cf5801-1438454334.tcloudbaseapp.com/releases/studyroom/1.41/studyroom-1.41.apk"
+  "preferredApkUrl": "https://commercial-cloudbase-d0a54cf5801-1438454334.tcloudbaseapp.com/releases/studyroom/1.41/studyroom-1.41.apk",
+  "iconFile": "icons/studyroom.png",
+  "catalogOrder": 30,
+  "catalogUpdatedAt": "2026-10-06T14:46:33+08:00"
 }

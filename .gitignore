@@ -1,1 +1,4 @@
 apps/*.apk
+
+__pycache__/
+*.pyc
