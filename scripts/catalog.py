@@ -8,6 +8,7 @@ import base64
 import json
 import os
 import struct
+import subprocess
 import sys
 import time
 import urllib.error
@@ -165,12 +166,30 @@ def cmd_check(_args: argparse.Namespace) -> None:
     print(f"CATALOG_GENERATED_MATCH=PASS apps={len(build_catalog()['apps'])}")
 
 
-def github_json(url: str) -> dict:
+def resolve_github_token() -> str | None:
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if token:
+        return token.strip()
+    try:
+        result = subprocess.run(
+            ["gh", "auth", "token"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=10,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    token = result.stdout.strip()
+    return token or None
+
+
+def github_json(url: str):
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "xiaoshutong-box-catalog-gate",
     }
-    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    token = resolve_github_token()
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(url, headers=headers)
@@ -182,10 +201,16 @@ def github_json(url: str) -> dict:
 
 
 def cmd_verify_releases(_args: argparse.Namespace) -> None:
+    releases = github_json(f"https://api.github.com/repos/{REPO}/releases?per_page=100")
+    if not isinstance(releases, list):
+        fail("GitHub releases endpoint returned an unexpected payload")
+    by_tag = {release.get("tag_name"): release for release in releases}
     count = 0
     for path, data, _icon in load_manifests():
         tag = data["releaseTag"]
-        release = github_json(f"https://api.github.com/repos/{REPO}/releases/tags/{tag}")
+        release = by_tag.get(tag)
+        if release is None:
+            fail(f"{path.name}: release {tag} was not found in the latest 100 releases")
         if release.get("draft") or release.get("prerelease"):
             fail(f"{path.name}: release {tag} is draft/prerelease")
         if release.get("published_at") != data["publishedAt"]:
