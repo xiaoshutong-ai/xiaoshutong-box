@@ -134,6 +134,7 @@ def build_catalog() -> dict:
             "versionName": data["versionName"],
             "apkUrl": data["apkUrl"],
             "size": data["sizeBytes"],
+            "sizeBytes": data["sizeBytes"],
             "sha256": data["sha256"],
             "icon": DATA_URI_PREFIX + base64.b64encode(icon_bytes).decode("ascii"),
             "changelog": data["changelog"],
