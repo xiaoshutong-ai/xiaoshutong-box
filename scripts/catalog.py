@@ -94,6 +94,11 @@ def load_manifests() -> list[tuple[Path, dict, bytes]]:
             fail(f"{path.relative_to(ROOT)}: sha256 must be 64 lowercase hex characters")
         if not str(data["apkUrl"]).startswith("https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/"):
             fail(f"{path.relative_to(ROOT)}: apkUrl must use the canonical xiaoshutong-box GitHub Release channel")
+        install_page = data.get("preferredInstallPageUrl")
+        if install_page:
+            parsed_install_page = urlparse(str(install_page))
+            if parsed_install_page.scheme != "https" or parsed_install_page.hostname not in {"pgyer.com", "www.pgyer.com"}:
+                fail(f"{path.relative_to(ROOT)}: preferredInstallPageUrl must use https://www.pgyer.com/")
         parse_time(str(data["publishedAt"]), f"{path.name}.publishedAt")
         parse_time(str(data["catalogUpdatedAt"]), f"{path.name}.catalogUpdatedAt")
 
@@ -137,6 +142,9 @@ def build_catalog() -> dict:
         preferred = data.get("preferredApkUrl")
         if preferred:
             item["preferredApkUrl"] = preferred
+        install_page = data.get("preferredInstallPageUrl")
+        if install_page:
+            item["preferredInstallPageUrl"] = install_page
         apps.append(item)
     return {"updatedAt": latest[1]["catalogUpdatedAt"], "apps": apps}
 

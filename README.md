@@ -25,7 +25,7 @@
 - `catalogOrder`：统一版本单中的稳定顺序
 - `catalogUpdatedAt`：该应用最近一次 catalog 元数据更新时间
 
-`sourceCommit`、`preferredApkUrl` 等字段按应用需要保留。
+`sourceCommit`、`preferredApkUrl` 等字段按应用需要保留。大陆安装页可使用可选字段 `preferredInstallPageUrl`；它是浏览器安装入口，不得冒充可做 APK SHA-256 校验的 `apkUrl` / `preferredApkUrl`。
 
 根 `versions.json.updatedAt` 自动取所有 manifest 中最新的 `catalogUpdatedAt`。
 
