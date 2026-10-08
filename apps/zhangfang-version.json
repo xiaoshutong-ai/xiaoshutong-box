@@ -1,0 +1,18 @@
+{
+  "package": "com.xiaoshutong.zhangfang",
+  "name": "小书童·账房",
+  "desc": "本地优先加密记账、月度预算与离线备份恢复",
+  "versionCode": 3,
+  "versionName": "0.9.1",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/zhangfang-v0.9.1/zhangfang-0.9.1.apk",
+  "sha256": "df21d7444d97a573c7e4a3c51f0f9df1d6af93ce34bf5756e437d839e94ee3aa",
+  "sizeBytes": 132142536,
+  "publishedAt": "2026-10-08T05:33:57Z",
+  "releaseTag": "zhangfang-v0.9.1",
+  "sourceCommit": "a8a23977166a116025e0bad7176a60096dcb4d42",
+  "changelog": "0.9.1 首发：本地加密账本、收支记录、预算统计、加密 .xstb 备份恢复；已通过 CI、独立安全审查和 Android 13 真机备份恢复验收。",
+  "minVersionCode": 0,
+  "iconFile": "icons/zhangfang.png",
+  "catalogOrder": 60,
+  "catalogUpdatedAt": "2026-10-08T13:35:16+08:00"
+}
