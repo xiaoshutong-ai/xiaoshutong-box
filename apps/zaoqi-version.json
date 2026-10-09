@@ -1,0 +1,18 @@
+{
+  "package": "com.xiaoshutong.zaoqi",
+  "name": "小书童·早起",
+  "desc": "离线早起计划、两站二维码/NFC 验证与历史统计",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/zaoqi-v1.0.0/zaoqi-1.0.0.apk",
+  "sha256": "146afbc9eace4d2eb1243c8319f7a0584ffefe7d563bcccae50a14fc60250446",
+  "sizeBytes": 62280470,
+  "publishedAt": "2026-10-09T16:56:38Z",
+  "releaseTag": "zaoqi-v1.0.0",
+  "sourceCommit": "4e66a53ec4698775cacaa9934de2e72f6344e86e",
+  "changelog": "独立签名版首发：离线双地点 QR/NFC 早起与加密迁移。旧包保留；必须先导入，再停用旧闹钟，最后激活新版。OEM 真机锁屏/NFC 可靠性仍在补充验收，不应未经实测作为唯一闹钟。",
+  "minVersionCode": 0,
+  "iconFile": "icons/zaoqi.png",
+  "catalogOrder": 70,
+  "catalogUpdatedAt": "2026-10-10T00:59:15+08:00"
+}

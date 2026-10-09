@@ -1,0 +1,18 @@
+{
+  "package": "com.xiaoshutong.gardensudoku",
+  "name": "小书童·花园数独",
+  "desc": "离线花园主题数独 Alpha，支持 4×4、6×6、9×9 与学习记录",
+  "versionCode": 1,
+  "versionName": "0.1.5-alpha",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/gardensudoku-v0.1.5-alpha/gardensudoku-0.1.5-alpha.apk",
+  "sha256": "60746dfa25321ab35949c4a34fb7b09989219de604d4aaad16869c655894f189",
+  "sizeBytes": 815489,
+  "publishedAt": "2026-10-09T16:55:02Z",
+  "releaseTag": "gardensudoku-v0.1.5-alpha",
+  "sourceCommit": "a2fd93920be116bb35cc8caf780095353d5c3521",
+  "changelog": "花园数独 Alpha 首发：离线 4×4/6×6/9×9，学习档案和继续上局；优化 Android 返回手势与备份校验。Note 9 实测 4×4 和恢复上局通过。新包与旧 Alpha 并存，旧数据需手动备份导入。",
+  "minVersionCode": 0,
+  "iconFile": "icons/gardensudoku.png",
+  "catalogOrder": 80,
+  "catalogUpdatedAt": "2026-10-10T00:59:15+08:00"
+}
