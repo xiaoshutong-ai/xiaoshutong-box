@@ -1,0 +1,18 @@
+{
+  "package": "com.xiaoshutong.qiaosuan24",
+  "name": "小书童·24 点星星版",
+  "desc": "离线 24 点算术挑战、星级进度与主题奖励",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/qiaosuan24-v1.0.0/qiaosuan24-1.0.0.apk",
+  "sha256": "03befec33e9ad6216ec31953abfe26707dfa44e771aedfa8efeecb5f1ed46137",
+  "sizeBytes": 963082,
+  "publishedAt": "2026-10-09T16:55:42Z",
+  "releaseTag": "qiaosuan24-v1.0.0",
+  "sourceCommit": "d3a96a20c64e4424eb0656deb0a8084cad00db05",
+  "changelog": "离线 24 点星星版独立正式签名首发：星级/奖励与备份恢复；新版仅手动备份，不启用 Android 自动云备份。Note 9 安装/冷启动与返回导航通过。旧版可并存，用户进度需主动备份导入。",
+  "minVersionCode": 0,
+  "iconFile": "icons/qiaosuan24.png",
+  "catalogOrder": 90,
+  "catalogUpdatedAt": "2026-10-10T00:59:15+08:00"
+}
