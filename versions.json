@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T18:41:34Z",
+  "updatedAt": "2026-10-11T16:11:28Z",
   "apps": [
     {
       "package": "com.jay.passwordmanager",
@@ -74,7 +74,7 @@
     },
     {
       "package": "com.xiaoshutong.zhangfang",
-      "name": "小书童·账房",
+      "name": "账房",
       "desc": "本地优先加密记账、月度预算与离线备份恢复",
       "versionCode": 3,
       "versionName": "0.9.1",
@@ -88,7 +88,7 @@
     },
     {
       "package": "com.xiaoshutong.zaoqi",
-      "name": "小书童·早起",
+      "name": "早起",
       "desc": "离线早起计划、两站二维码/NFC 验证与历史统计",
       "versionCode": 1,
       "versionName": "1.0.0",
@@ -102,8 +102,8 @@
     },
     {
       "package": "com.xiaoshutong.gardensudoku",
-      "name": "小书童·花园数独",
-      "desc": "离线花园主题数独 Alpha，支持 4×4、6×6、9×9 与学习记录",
+      "name": "花园数独",
+      "desc": "离线花园主题数独，支持 4×4、6×6、9×9 与学习记录",
       "versionCode": 1,
       "versionName": "0.1.5-alpha",
       "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/gardensudoku-v0.1.5-alpha/gardensudoku-0.1.5-alpha.apk",
@@ -116,7 +116,7 @@
     },
     {
       "package": "com.xiaoshutong.qiaosuan24",
-      "name": "小书童·24 点星星版",
+      "name": "24 点星星版",
       "desc": "离线 24 点算术挑战、星级进度与主题奖励",
       "versionCode": 1,
       "versionName": "1.0.0",

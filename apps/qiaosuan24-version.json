@@ -1,6 +1,6 @@
 {
   "package": "com.xiaoshutong.qiaosuan24",
-  "name": "小书童·24 点星星版",
+  "name": "24 点星星版",
   "desc": "离线 24 点算术挑战、星级进度与主题奖励",
   "versionCode": 1,
   "versionName": "1.0.0",
@@ -14,5 +14,5 @@
   "minVersionCode": 0,
   "iconFile": "icons/qiaosuan24.png",
   "catalogOrder": 90,
-  "catalogUpdatedAt": "2026-10-10T00:59:15+08:00"
+  "catalogUpdatedAt": "2026-10-11T16:11:28Z"
 }
