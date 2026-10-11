@@ -1,6 +1,6 @@
 {
   "package": "com.xiaoshutong.zhangfang",
-  "name": "小书童·账房",
+  "name": "账房",
   "desc": "本地优先加密记账、月度预算与离线备份恢复",
   "versionCode": 3,
   "versionName": "0.9.1",
@@ -14,5 +14,5 @@
   "minVersionCode": 0,
   "iconFile": "icons/zhangfang.png",
   "catalogOrder": 60,
-  "catalogUpdatedAt": "2026-10-08T13:35:16+08:00"
+  "catalogUpdatedAt": "2026-10-11T16:11:28Z"
 }
