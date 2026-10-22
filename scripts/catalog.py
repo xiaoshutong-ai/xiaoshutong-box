@@ -75,6 +75,8 @@ def load_manifests() -> list[tuple[Path, dict, bytes]]:
         order = data["catalogOrder"]
         if package in seen_packages:
             fail(f"duplicate package {package}")
+        if "publicVisible" in data and type(data["publicVisible"]) is not bool:
+            fail(f"{path.relative_to(ROOT)}: publicVisible must be a boolean")
         if not isinstance(order, int) or order < 0 or order in seen_orders:
             fail(f"{path.relative_to(ROOT)}: invalid/duplicate catalogOrder {order!r}")
         seen_packages.add(package)
@@ -126,6 +128,8 @@ def build_catalog() -> dict:
     latest = max(manifests, key=lambda item: parse_time(str(item[1]["catalogUpdatedAt"]), item[0].name))
     apps: list[dict] = []
     for _path, data, icon_bytes in manifests:
+        if not data.get("publicVisible", True):
+            continue
         item = {
             "package": data["package"],
             "name": data["name"],

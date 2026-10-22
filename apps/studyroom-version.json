@@ -14,5 +14,6 @@
   "minVersionCode": 37,
   "iconFile": "icons/studyroom.png",
   "catalogOrder": 30,
-  "catalogUpdatedAt": "2026-10-09T18:41:34Z"
+  "catalogUpdatedAt": "2026-10-22T08:38:44Z",
+  "publicVisible": false
 }
