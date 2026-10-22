@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import json
-import subprocess
 import sys
 import unittest
 from pathlib import Path
@@ -16,21 +14,20 @@ class CatalogVisibilityTest(unittest.TestCase):
     def test_internal_studyroom_is_excluded_from_public_catalog_only(self):
         all_manifests = catalog.load_manifests()
         published = catalog.build_catalog()
-        self.assertEqual(len(all_manifests), 9)
-        self.assertEqual(len(published["apps"]), 8)
-        self.assertEqual(sum(d["package"] == "com.jay.studyroom" for _, d, _ in all_manifests), 1)
-        self.assertFalse(any(a["package"] == "com.jay.studyroom" for a in published["apps"]))
+        internal = [d for _, d, _ in all_manifests if d.get("publicVisible", True) is False]
+
+        self.assertEqual([d["package"] for d in internal], ["com.jay.studyroom"])
+        expected_public = [d["package"] for _, d, _ in all_manifests if d.get("publicVisible", True)]
+        self.assertEqual([app["package"] for app in published["apps"]], expected_public)
+        self.assertEqual(len(published["apps"]), len(all_manifests) - len(internal))
         self.assertEqual(
             published["updatedAt"],
-            next(d["catalogUpdatedAt"] for _, d, _ in all_manifests if d["package"] == "com.jay.studyroom"),
+            max(
+                all_manifests,
+                key=lambda item: catalog.parse_time(str(item[1]["catalogUpdatedAt"]), item[0].name),
+            )[1]["catalogUpdatedAt"],
         )
-
-        previous = json.loads(subprocess.check_output(
-            ["git", "-C", str(ROOT), "show", "HEAD:versions.json"], text=True, encoding="utf-8"
-        ))
-        visible_before = [a for a in previous["apps"] if a["package"] != "com.jay.studyroom"]
-        self.assertEqual(published["apps"], visible_before)
-        self.assertEqual(len(previous["apps"]) - len(published["apps"]), 1)
+        self.assertEqual(published, catalog.read_json(ROOT / "versions.json"))
 
     def test_non_boolean_visibility_is_rejected(self):
         actual_reader = catalog.read_json
