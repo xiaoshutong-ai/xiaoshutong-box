@@ -29,6 +29,13 @@
 
 根 `versions.json.updatedAt` 自动取所有 manifest 中最新的 `catalogUpdatedAt`。
 
+## 公开展示与内部保留
+
+- `apps/*-version.json` 中可选的 `publicVisible` 默认为 `true`；严格布尔值 `false` 表示内部应用，`scripts/catalog.py` 在生成公开 `versions.json` 时省略它。
+- 内部应用的 manifest、既有 APK 签名、SHA-256、GitHub Release 仍保留并参加 `verify-releases`，不影响已安装包；公开目录不再提供它的下载或更新卡片。
+- 这只是**目录隐藏**，不是 GitHub Release 访问控制：历史公开 APK 链接仍可访问。内部人员通过各应用私有仓库中的更新指引下载同签名包并由 Android 系统确认安装。
+- 生成目录、CDN 缓存回读和客户端展示分别验证；不得把主线 JSON 更新当成真机已隐藏。
+
 ## 本地/Agent Gate
 
 以下命令仅使用 Python 标准库，不需要额外依赖：
