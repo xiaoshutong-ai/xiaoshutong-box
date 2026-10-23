@@ -96,6 +96,22 @@ https://cdn.jsdelivr.net/gh/xiaoshutong-ai/xiaoshutong-box@main/versions.json
 - 2026-10-22 Note9 / Android 12 的系统 `curl` 在 Wi-Fi 下完整下载并在手机本地核验：两款均 HTTP 200、SHA-256 PASS（观察到约 1.47 秒和 26.47 秒）；测试 APK 已清理，**未安装**。这不等同于百宝箱内部 Android DownloadManager 或全国运营商下载合格。
 - **未通过：** 在 Windows 和 Note9 上对上述镜像请求 `Range: bytes=0-1023`，均得到 HTTP **200**、无 `Content-Range`，而非 **206 Partial Content**。即使响应包含 `Accept-Ranges: bytes`，也不得宣称支持断点续传。大 APK 下载中断可能从头重新传输；当前镜像为受控试点/备用候选，不是自动预备首选源。
 
+### 免费上海目录镜像：同步与防止过期（2026-10-23 新增）
+
+**职责**：GitHub main 的 versions.json 始终是唯一权威公开目录；上海现有 CloudBase DIRECT 只存放一份相同字节的被动镜像，供百宝箱 1.16.3/code20 源码候选的 Java 网络故障回退。固定访问地址：https://dl.xiaoshutongai.com/releases/catalog/versions.json（同路由只有版本目录及 SHA256SUMS.txt）。没有购买 COS/CDN、增加域名、改变 GitHub Releases、正式 apkUrl 或分发事实源。
+
+2026-10-23 可重复验收快照：公开目录 8 款、552263 字节，SHA-256 **21dfafd5d4b2024517c410eca9c5f9b10aab9b5eb6df4119dcf74ce6d0f6b631**，updatedAt **2026-10-23T00:27:34Z**。从官方 main 读出后上传至现有上海 CloudBase；Windows HTTPS 完整 GET、Note9 系统 curl 完整 GET+sha256sum 以及 Note9 Android Java 原生 HTTP 请求均返回 200，前两种全量哈希与官方一致。Note9 Java 对 jsDelivr / GitHub Raw 的 SocketException 解释了第三源用途，但不等于 1.16.3 真机 App 验收。当前已安装 Note9 仍为 1.16.2/code19；公开 Release 仍为 1.16.1/code18。
+
+**今后每次正式目录更新**须按以下操作：
+
+1. 先通过仓库原有 manifest→generate→check→verify-releases→PR/review→merge→purge-verify Gate。GitHub main 最新目录和 Release 仍是唯一权威。
+2. 从合入后的 GitHub main 重新取完整版本目录字节，核对 SHA-256、公开数量、隐藏应用排除、根 updatedAt、精确 HEAD；本节旧哈希/数量只是历史快照。
+3. 仅在现有免费额度和权限仍合格时，把核实后的完整 versions.json 和对应 SHA256SUMS.txt 上传到既有 commercial-cloudbase-d0a54cf5801 / ap-shanghai 静态托管目录 releases/catalog/。复用现有 CLI 命令 tcb hosting deploy，参数包含 releases/catalog、-e commercial-cloudbase-d0a54cf5801、--region ap-shanghai、--verify、--concurrency 1。临时目录必须只含两份已核实的公开文件。禁止新收费资源、通配桶权限或改 dl DNS。
+4. 从公开 HTTPS 重新 GET 上海镜像，比较完整响应 SHA 与官方 main、根 updatedAt 以及 HTTP200；用户可见变更时抽测真实 Android Java。未通过标记上海目录镜像 STALE/NOT_VERIFIED，不得把它当最新版本。GitHub 已通过的独立正式 Gate 不因镜像卡住被伪造或抹掉。
+5. 新版 Android 客户端须拒绝 updatedAt 早于当前可靠私有缓存或签名 APK 内置种子的目录，不允许较旧的上海镜像覆写“上次最新”缓存；内置快照仅供展示，离线不创建 APK 下载任务。
+
+不授权新的 APK 签名、再次 Note9 覆盖安装、改变公开下载源或发布新版本。原上海 Range/206 限制、成本与两项到期提醒仍在下文。
+
 ### COS 原生下载的独立候选（尚未开通／切流）
 
 - 2026-10-22 只读检查现有 CloudBase 的上海静态存储与普通存储两类底层资源：**外部存储未启用**；从现有 COS 默认端点对已知试点对象执行 HEAD / 小范围读取均返回 **403**，无法证明这些底层桶可直接公开下载，也没有取得 206 验收。**不要为了测试把整个桶、已有身份文件或其他项目对象改成公共读。**

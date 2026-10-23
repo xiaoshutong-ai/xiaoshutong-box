@@ -24,6 +24,7 @@ This repository is a distribution metadata/release index, not an application sou
 7. Run `python scripts/catalog.py generate`, then rerun `check` and the applicable release Gate.
 8. After metadata merge, run `python scripts/catalog.py purge-verify` before claiming the catalog is live.
 9. Use physical-device/client verification when the change affects user-visible discovery/install behavior.
+10. After any public main catalog mutation and purge-verify, use the existing README Shanghai catalog mirror procedure; validate origin bytes/hash/updatedAt. Do not claim the Shanghai copy is canonical or fresh if synchronization was not verified. A mirror HOLD does not erase an independently verified GitHub catalog state.
 
 All branch/head/release/CDN/device facts are staleable and must be revalidated live before mutation or completion claims.
 
