@@ -1,0 +1,21 @@
+{
+  "package": "com.xiaoshutong.renjianstarmap.personaldev",
+  "name": "人间星图（开发试用）",
+  "desc": "开发试用：记下原话、回看人物与时间线；云同步未开启",
+  "versionCode": 2,
+  "versionName": "0.1.0-personaldev",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/renjian-starmap-v0.1.0-personaldev/renjian-starmap-0.1.0-personaldev.apk",
+  "sha256": "9a5387b9700be121abe6e6aa14d0c38c33da16a947401229df3163669ad7653c",
+  "sizeBytes": 18124302,
+  "publishedAt": "2026-10-27T15:51:03Z",
+  "releaseTag": "renjian-starmap-v0.1.0-personaldev",
+  "sourceCommit": "b8ec1721be2fe0c3c495932c1c28ae8408e1b0c6",
+  "changelog": "先使用、边用边修的 Development 试用包。文字记录、本机加密保存、人物与时间线、修订及提醒页面可用；已有 Development 测试账号可选择账户空间，对新文字使用 GLM 整理。云同步、换机恢复、遥测上传及云端产品删除未启用；没有独立语音转文字。使用现有开发签名，不代表完整 V0.1 或生产验收完成。新原文会经 Supabase 发给智谱，保留应用内第三方处理披露；不要把本机保存当作云备份。",
+  "minVersionCode": 0,
+  "iconFile": "icons/renjian-starmap.png",
+  "catalogOrder": 100,
+  "catalogUpdatedAt": "2026-10-27T15:52:06Z",
+  "publicVisible": true,
+  "signerSha256": "e92e4d40ce7694bce8d54dec2eb7e23afcd1a871891fe11e50cfec5ce57afa3f",
+  "releaseChannel": "development-trial"
+}
