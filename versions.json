@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T15:52:06Z",
+  "updatedAt": "2026-10-29T18:17:58Z",
   "apps": [
     {
       "package": "com.jay.passwordmanager",
@@ -116,15 +116,15 @@
     {
       "package": "com.xiaoshutong.renjianstarmap.personaldev",
       "name": "人间星图（开发试用）",
-      "desc": "开发试用：记下原话、回看人物与时间线；云同步未开启",
-      "versionCode": 2,
-      "versionName": "0.1.0-personaldev",
-      "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/renjian-starmap-v0.1.0-personaldev/renjian-starmap-0.1.0-personaldev.apk",
-      "size": 18124302,
-      "sizeBytes": 18124302,
-      "sha256": "9a5387b9700be121abe6e6aa14d0c38c33da16a947401229df3163669ad7653c",
+      "desc": "开发试用：自己的私人宇宙，点星回看人物与原话；云同步未开启",
+      "versionCode": 3,
+      "versionName": "0.1.1-personaldev",
+      "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/renjian-starmap-v0.1.1-personaldev/renjian-starmap-0.1.1-personaldev.apk",
+      "size": 18157070,
+      "sizeBytes": 18157070,
+      "sha256": "c465e4b7a806ec98b39ca8af7f204cee232dac7f26af6511f2354a2c409ce79f",
       "icon": "data:image/png;base64,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",
-      "changelog": "先使用、边用边修的 Development 试用包。文字记录、本机加密保存、人物与时间线、修订及提醒页面可用；已有 Development 测试账号可选择账户空间，对新文字使用 GLM 整理。云同步、换机恢复、遥测上传及云端产品删除未启用；没有独立语音转文字。使用现有开发签名，不代表完整 V0.1 或生产验收完成。新原文会经 Supabase 发给智谱，保留应用内第三方处理披露；不要把本机保存当作云备份。",
+      "changelog": "新增私人宇宙：首页以自己为中心，真实记录关联的人物点亮为星并相连；点星回看此人的原话历史，保留人物资料、记录与提醒入口。支持拖动、缩放、回到我和完整人物列表。沿用原有记录空间和开发签名。云同步、换机恢复、遥测上传及云端产品删除仍未启用；没有独立语音转文字。Development账号的新原文整理仍经Supabase发给智谱，应用内保留披露；本机保存不是云备份。这是开发试用更新，不代表完整V0.1或生产验收。",
       "minVersionCode": 0
     }
   ]
