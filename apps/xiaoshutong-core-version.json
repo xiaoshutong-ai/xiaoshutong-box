@@ -1,0 +1,19 @@
+{
+  "package": "cn.xiaoshutong.child",
+  "name": "小书童 Core",
+  "desc": "AI 学习陪伴、作业语义整理与人工复核",
+  "versionCode": 4,
+  "versionName": "0.1.5",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/xiaoshutong-core-v0.1.5/xiaoshutong-core-0.1.5.apk",
+  "sha256": "9acc15e4590942521a53875202918d54ad905fd6526dbe1cc56347474e4b499d",
+  "sizeBytes": 403365449,
+  "publishedAt": "2026-10-29T19:26:34Z",
+  "releaseTag": "xiaoshutong-core-v0.1.5",
+  "changelog": "0.1.5：质量优先作业 OCR 的 DeepSeek 语义重组、分科及来源复核；延长复杂作业识别超时预算；保留原广州正式账号、家长授权与离线语音。",
+  "minVersionCode": 1,
+  "iconFile": "icons/xiaoshutong-core.png",
+  "catalogOrder": 5,
+  "catalogUpdatedAt": "2026-10-29T19:26:34Z",
+  "sourceCommit": "3ace5550ee72b6ab36cb909347399b88addd47a0",
+  "publicVisible": true
+}
