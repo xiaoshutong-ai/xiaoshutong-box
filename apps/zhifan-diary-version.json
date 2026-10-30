@@ -1,0 +1,18 @@
+{
+  "package": "com.xiaoshutong.zhifan",
+  "name": "知返日记",
+  "desc": "记住有价值的经历与对话，离线转写和有据日记整理",
+  "versionCode": 1,
+  "versionName": "0.1.0",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/zhifan-diary-v0.1.0/zhifan-diary-0.1.0.apk",
+  "sha256": "c8c9599197f520d1bae07e5dbbcea91dd12abb87737deb7f7b9368a00c631404",
+  "sizeBytes": 52124146,
+  "publishedAt": "2026-10-30T05:45:33Z",
+  "releaseTag": "zhifan-diary-v0.1.0",
+  "changelog": "首个正式版本：本地离线转写、按日期查看原文、全天日记整理与出处核验、实际阶段进度、预览保存及重开；复用当前小书童统一账号，符合资格且已验证的账号默认每天3次整理。",
+  "minVersionCode": 1,
+  "iconFile": "icons/zhifan-diary.png",
+  "catalogOrder": 110,
+  "catalogUpdatedAt": "2026-10-30T05:45:33Z",
+  "sourceCommit": "7d6841d782763fea16fa14fa74a3931b95eebf4e"
+}
