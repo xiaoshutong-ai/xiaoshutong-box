@@ -1,18 +1,18 @@
 {
   "package": "com.jay.personalchecklist.accountbeta",
   "name": "蒙正规划",
-  "desc": "个人任务规划、提醒与协作，支持 AI 蒙正规划引擎",
-  "versionCode": 43,
-  "versionName": "2.2.25-gz",
-  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/mengzheng-v2.2.25-gz/mengzheng-2.2.25-gz.apk",
-  "sha256": "de7ac125014296d7bd613be273c1af6956beee527c94c2743b3ae324b9c6d74d",
+  "desc": "个人任务规划、提醒、好友聊天与协作；广州 AI 规划引擎尚未接入",
+  "versionCode": 44,
+  "versionName": "2.2.26-gz",
+  "apkUrl": "https://github.com/xiaoshutong-ai/xiaoshutong-box/releases/download/mengzheng-v2.2.26-gz/mengzheng-2.2.26-gz.apk",
+  "sha256": "9770c5d957deed6d0e6b25364e8fac264743a53d45fea6d01bf497d0d6f5a031",
   "sizeBytes": 4701910,
-  "publishedAt": "2026-11-02T14:41:57Z",
-  "releaseTag": "mengzheng-v2.2.25-gz",
-  "sourceCommit": "907bed92ba2a5dbe62de208ca59e31ca64e995f6",
-  "changelog": "2.2.25-gz 好友管理正式版：新增好友码查找、发送申请、接受或拒绝、撤回申请、好友备注和删除好友。解除好友时撤销待处理邀请及双方共享任务查看权限，保留历史聊天和已接受协作；本机清理撤权缓存。保留广州 R4 登录、文字规划、20MB 图片、双端聊天删除、表情与输入法贴图、通知与检查更新。沿用原商业签名证书与 v42 轻量架构，不包含独立语音模型。",
+  "publishedAt": "2026-11-03T01:26:55Z",
+  "releaseTag": "mengzheng-v2.2.26-gz",
+  "sourceCommit": "6dc7951937306662d9c008d5df80f9457027eba4",
+  "changelog": "2.2.26-gz：规划引擎状态检查不再误报网络故障，明确提示广州 AI 规划服务尚未接入，阻止任务正文发送到旧新加坡 AI 接口。包含后台好友消息周期任务漏注册修复。保留广州登录、已有六项好友管理、聊天及图片20MB、双端消息删除、表情、同步与版本检查。本版不代表 AI 自动生成规划或休眠即时通知已经上线。",
   "minVersionCode": 0,
   "iconFile": "icons/mengzheng.png",
   "catalogOrder": 50,
-  "catalogUpdatedAt": "2026-11-02T14:59:40Z"
+  "catalogUpdatedAt": "2026-11-03T01:28:03Z"
 }
