@@ -15,7 +15,7 @@
   "iconFile": "icons/renjian-starmap.png",
   "catalogOrder": 100,
   "catalogUpdatedAt": "2026-10-29T18:17:58Z",
-  "publicVisible": true,
+  "publicVisible": false,
   "signerSha256": "e92e4d40ce7694bce8d54dec2eb7e23afcd1a871891fe11e50cfec5ce57afa3f",
   "releaseChannel": "development-trial"
 }
