@@ -15,7 +15,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 APPS_DIR = ROOT / "apps"
@@ -223,7 +223,12 @@ def cmd_verify_releases(_args: argparse.Namespace) -> None:
         tag = data["releaseTag"]
         release = by_tag.get(tag)
         if release is None:
-            fail(f"{path.name}: release {tag} was not found in the latest 100 releases")
+            # Box may have >100 Releases. An older app's canonical tag can
+            # remain valid even when it falls off the latest-first page.
+            release = github_json(
+                f"https://api.github.com/repos/{REPO}/releases/tags/{quote(tag, safe='')}")
+        if not isinstance(release, dict) or release.get("tag_name") != tag:
+            fail(f"{path.name}: release lookup returned an unexpected tag")
         if release.get("draft") or release.get("prerelease"):
             fail(f"{path.name}: release {tag} is draft/prerelease")
         if release.get("published_at") != data["publishedAt"]:
