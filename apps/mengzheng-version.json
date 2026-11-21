@@ -8,12 +8,12 @@
   "preferredApkUrl": "https://dl.xiaoshutongai.com/releases/mengzheng/2.2.47-gz/mengzheng-2.2.47-gz.apk",
   "sha256": "6e95403dfa292217e81796ce90a83393cca46dde60b098417e852c914d852ff0",
   "sizeBytes": 5795658,
-  "publishedAt": "2026-11-20T23:44:02Z",
+  "publishedAt": "2026-11-21T00:12:11Z",
   "releaseTag": "mengzheng-v2.2.47-gz",
   "sourceCommit": "f363164b3f1fa0bff8cc041f36f8877fa9a97099",
   "changelog": "好友聊天升级端到端加密，消息与媒体发送前加密；服务器仅临时中转密文，最长保留7天。双方首次加密聊天需分别核对安全码。旧版好友聊天发送将停用，请升级后使用。",
   "minVersionCode": 0,
   "iconFile": "icons/mengzheng.png",
   "catalogOrder": 50,
-  "catalogUpdatedAt": "2026-11-20T23:44:02Z"
+  "catalogUpdatedAt": "2026-11-21T00:12:11Z"
 }
